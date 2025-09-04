@@ -139,7 +139,7 @@ python pi_long.py --image_dir ./path_of_images --config ./configs/base_config.ya
 
 ## Acknowledgements
 
-Our project is based on [VGGT-Long](https://github.com/DengKaiCQ/VGGT-Long) and [Pi3](https://github.com/yyfz/Pi3). Our work would not have been possible without these excellent repositories.
+Our project is based on [VGGT](https://github.com/facebookresearch/vggt), [VGGT-Long](https://github.com/DengKaiCQ/VGGT-Long) and [Pi3](https://github.com/yyfz/Pi3). Our work would not have been possible without these excellent repositories.
 
 ## Citation
 
