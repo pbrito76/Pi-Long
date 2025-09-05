@@ -557,6 +557,24 @@ class Pi_Long:
         print(f"Saved disk space: {total_space/1024/1024/1024:.4f} GiB")
 
 
+import shutil
+def copy_file(src_path, dst_dir):
+    try:
+        os.makedirs(dst_dir, exist_ok=True)
+        
+        dst_path = os.path.join(dst_dir, os.path.basename(src_path))
+        
+        shutil.copy2(src_path, dst_path)
+        print(f"config yaml file has been copied to: {dst_path}")
+        return dst_path
+        
+    except FileNotFoundError:
+        print("File Not Found")
+    except PermissionError:
+        print("Permission Error")
+    except Exception as e:
+        print(f"Copy Error: {e}")
+
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='VGGT-Long')
@@ -585,6 +603,7 @@ if __name__ == '__main__':
     if not os.path.exists(save_dir): 
         os.makedirs(save_dir)
         print(f'The exp will be saved under dir: {save_dir}')
+        copy_file(args.config, save_dir)
 
     if config['Model']['align_method'] == 'numba':
         warmup_numba()
