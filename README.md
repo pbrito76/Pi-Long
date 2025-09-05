@@ -1,17 +1,22 @@
 <p align="center">
 <p align="center">
-<h1 align="center">Pi-Long: Pushing $\pi^3$'s Limits on Kilometer-scale Long RGB Sequences with the  Framework of VGGT-Long</h1>
+<h1 align="center">Pi-Long: Extending $\pi^3$'s Capabilities on Kilometer-scale with the  Framework of VGGT-Long</h1>
 </p>
 
-We received some suggestions that `VGGT-Long`, as a lightweight extension method, can be easily migrated to other methods, such as `Pi3`. We think this is a great idea, and as an extension method, compatibility with similar methods should be one of its features. The `Pi-Long` project is built on this background. The goals of this project are:
+We received some feedback suggesting that `VGGT-Long`, as a lightweight extension method, can be easily migrated to other methods, such as `Pi3`. We found this to be an excellent idea, and as an extension method, compatibility with similar methods should indeed be one of its key features. The `Pi-Long` project is built on this background. The goals of this project are:
 
-1. To provide a solution for migrating `VGGT-Long` to other similar methods like `Pi3`;
-2. `Pi3` is superior to `VGGT` in reconstruction stability, and `Pi-Long` is based on this to explore the performance of `Pi3` at the kilometer scale;
-3. To provide a baseline for subsequent related work;
+1. To provide a practical example of migrating `VGGT-Long` to other similar methods like `Pi3`;
+2. `Pi3` is superior to `VGGT` in reconstruction stability, and `Pi-Long` is based on this to explore its performance of `Pi3` at the kilometer scale;
+3. To provide a new baseline to facilitate future research
+4. To provide a better method for the community to use;
 
-Thanks to the modular code design of `VGGT-Long` and `Pi3`, the development time for `Pi-Long` was about 1.5 hours including creating environment and debugging. If you want to migrate `VGGT-Long` to other similar methods in the future, this time (1.5 hrs) can provide you with a time estimate for your project.
+Thanks to the modular code design of `VGGT-Long` and `Pi3`, the development of `Pi-Long` was straightforward. We have conducted some experiments as shown in the figure below.
 
-`Pi-Long` **does not have a paper that corresponds to**. This repository is built on the [VGGT-Long](https://github.com/DengKaiCQ/VGGT-Long) and [Pi3](https://github.com/yyfz/Pi3). So if you need the technical details of `Pi-Long`, please refer to the following two papers:
+![overview](./assets/Pi-Long-KITTI.png)
+
+As can be seen from the experiments, `Pi-Long`, implemented based on `Pi3`, exhibits more stable tracking performance in long-sequence outdoor scenarios. Particularly, without relying on the LC module, the performance of `Pi-Long` is significantly higher than that of `VGGT-Long`.
+
+`Pi-Long` **is not accompanied by a dedicated paper**. This repository is built on the [VGGT-Long](https://github.com/DengKaiCQ/VGGT-Long) and [Pi3](https://github.com/yyfz/Pi3). So if you need the technical details of `Pi-Long`, please refer to the following two papers:
 
 [VGGT-Long: Chunk it, Loop it, Align it -- Pushing VGGT's Limits on Kilometer-scale Long RGB Sequences](https://arxiv.org/abs/2507.16443)
 
@@ -143,23 +148,29 @@ Our project is based on [VGGT](https://github.com/facebookresearch/vggt), [VGGT-
 
 ## Citation
 
-If you use this repository in your academic paper, please cite the two related works below:
+If you use this repository in your academic project, please cite both of the two related works below:
 
 ```
-@article{deng2025vggtlong,
+@misc{deng2025vggtlongchunkitloop,
       title={VGGT-Long: Chunk it, Loop it, Align it -- Pushing VGGT's Limits on Kilometer-scale Long RGB Sequences}, 
       author={Kai Deng and Zexin Ti and Jiawei Xu and Jian Yang and Jin Xie},
-      journal={arXiv preprint arXiv:2507.16443},
-      year={2025}
+      year={2025},
+      eprint={2507.16443},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2507.16443}, 
 }
 ```
 
 ```
-@article{wang2025pi,
-      title={$$\backslash$pi\^{} 3$: Scalable Permutation-Equivariant Visual Geometry Learning},
-      author={Wang, Yifan and Zhou, Jianjun and Zhu, Haoyi and Chang, Wenzheng and Zhou, Yang and Li, Zizun and Chen, Junyi and Pang, Jiangmiao and Shen, Chunhua and He, Tong},
-      journal={arXiv preprint arXiv:2507.13347},
-      year={2025}
+@misc{wang2025pi3,
+      title={$\pi^3$: Scalable Permutation-Equivariant Visual Geometry Learning}, 
+      author={Yifan Wang and Jianjun Zhou and Haoyi Zhu and Wenzheng Chang and Yang Zhou and Zizun Li and Junyi Chen and Jiangmiao Pang and Chunhua Shen and Tong He},
+      year={2025},
+      eprint={2507.13347},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2507.13347}, 
 }
 ```
 
