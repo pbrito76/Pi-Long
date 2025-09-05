@@ -10,11 +10,11 @@ We received some feedback suggesting that `VGGT-Long`, as a lightweight extensio
 3. To provide a new baseline to facilitate future research
 4. To provide a better method for the community to use;
 
-Thanks to the modular code design of `VGGT-Long` and `Pi3`, the development of `Pi-Long` was straightforward. We have conducted some experiments on KITTI Odometry as shown in the figure below.
+Thanks to the modular code design of `VGGT-Long` and `Pi3`, the development of `Pi-Long` was straightforward. We have conducted some experiments on KITTI Odometry as shown in the figure below. The following experiments were all implemented under the same settings, i.e., `Chunk Size = 75`, `Overlap = 30`.
 
 ![overview](./assets/Pi-Long-KITTI.png)
 
-As can be seen from the experiments, `Pi-Long`, implemented based on `Pi3`, exhibits more stable tracking performance in long-sequence outdoor scenarios. Particularly, without relying on the LC module, the performance of `Pi-Long` is significantly higher than that of `VGGT-Long`.
+As can be seen from the experiments, `Pi-Long`, implemented based on `Pi3`, exhibits more stable tracking performance in long-sequence outdoor scenarios. Particularly, without relying on the LC module, the performance of `Pi-Long` is significantly higher than that of `VGGT-Long`. Furthermore, since `Pi3` has fewer model parameters, the peak GPU memory consumption of `Pi-Long` is around `13GiB`, while that of `VGGT-Long` under the same settings is `~23GiB`.
 
 `Pi-Long` **is not accompanied by a dedicated paper**. This repository is built on the [VGGT-Long](https://github.com/DengKaiCQ/VGGT-Long) and [Pi3](https://github.com/yyfz/Pi3). So if you need the technical details of `Pi-Long`, please refer to the following two papers:
 
