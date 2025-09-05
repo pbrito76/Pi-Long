@@ -10,7 +10,7 @@ We received some feedback suggesting that `VGGT-Long`, as a lightweight extensio
 3. To provide a new baseline to facilitate future research
 4. To provide a better method for the community to use;
 
-Thanks to the modular code design of `VGGT-Long` and `Pi3`, the development of `Pi-Long` was straightforward. We have conducted some experiments as shown in the figure below.
+Thanks to the modular code design of `VGGT-Long` and `Pi3`, the development of `Pi-Long` was straightforward. We have conducted some experiments on KITTI Odometry as shown in the figure below.
 
 ![overview](./assets/Pi-Long-KITTI.png)
 
@@ -141,6 +141,8 @@ or
 ```cmd
 python pi_long.py --image_dir ./path_of_images --config ./configs/base_config.yaml
 ```
+
+**Note on Space Requirements**: Just the same as `VGGT-Long`, please ensure your machine has sufficient disk space before running the code for `Pi-Long`. When finishing, the code will delete these intermediate results to prevent excessive disk usage.
 
 ## Acknowledgements
 
