@@ -23,7 +23,7 @@ As can be seen from the experiments, `Pi-Long`, implemented based on `Pi3`, exhi
 [$\pi^3$: Scalable Permutation-Equivariant Visual Geometry Learning](https://arxiv.org/abs/2507.13347)
 
 
-### **Changelog**
+### **Updates**
 
 `[04 Sep 2025]` Code of `Pi-Long` release.
 
